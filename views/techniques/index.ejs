@@ -1,0 +1,25 @@
+<div class="lotus-index">
+<%- include('../partials/header') %>
+
+
+    <ul>
+        <% techniques.forEach(function(t){ %>
+            <li>
+                <% if (user?._id.equals(t.user)) {%>
+                <form action="/techniques/<%= t.id %>?_method=DELETE" method="POST" class="delete-form">
+                    <button type="submit">🗑️</button>
+                </form>
+                <% } %>
+                <a href="/techniques/<%=t._id%>">
+                    <%= t.technique %>
+                </a>
+                <% }) %>
+            </li>
+
+    </ul>
+
+
+    
+    <%- include('../partials/footer') %>
+    
+ </div>

@@ -1,0 +1,69 @@
+<%- include('../partials/header') %>
+
+<div class="whole-technique">
+<ul>
+    <div class="titles"><li>Description:</li> </div> 
+  
+    <div class="description">
+       <%= technique.description %>
+   </div>
+    <div class="titles"><li>How did it make me feel? </li></div>
+    <div class="thoughts">
+        <%= technique.thoughts %>
+    </div>    
+    
+    
+        <form action="/techniques/<%= technique._id %>?_method=PUT" method="POST" class="update-form">
+        <div class="edit-technique">
+            <a href="/techniques/<%= technique._id %>/edit">Edit Technique</a>
+        </div>
+    </form>
+</ul>
+</div>
+
+
+
+<div class="add-comment-text">
+    <h4>Add a Comment:</h4>
+</div>
+
+<form class="add-comment" action="/techniques/<%= technique._id %>/comments" method="POST">
+    <input type="text" name="content">
+    <input type="submit" value="Post">
+  </form>
+
+<% if (technique.comments && technique.comments.length) { %>
+
+    <table>
+        <thead>
+            <tr>
+                <th> Date </th>
+                <th> Comment </th>
+                <th> </th>
+            </tr>
+        </thead>
+        <tbody>
+            <% technique.comments.forEach(function (c){ %>
+
+                <tr>
+                    <td><%= c.createdAt.toLocaleDateString() %></td>
+                    <td><%= c.content %></td>
+                    <td><%= c.user.name %></td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+<% } else { %>
+<div class="no-comment-yet">
+    <h5>No Comments Yet</h5>
+</div>
+<% } %>
+
+
+
+
+
+
+<%- include('../partials/footer') %>
+
+

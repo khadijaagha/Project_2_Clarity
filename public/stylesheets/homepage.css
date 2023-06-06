@@ -1,0 +1,78 @@
+
+.welcome-message{
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  /* position:relative; top:-140px; */
+  font-weight: bolder;
+  font-size: x-large;
+}
+
+.title-clarity {
+    font-size: 200px;
+    text-align:  center;
+    position:relative; top:-520px;
+    
+
+}
+body {
+    padding: 50px;
+    background-image: url('https://i.pinimg.com/564x/d8/d0/c5/d8d0c52ea8898d2eb3ce2d80785b630e.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(61, 52, 58);
+    text-shadow: 2px 4px 4px rgba(255, 93, 6, 0.6);
+
+
+
+    
+  }
+
+
+
+.google-symbol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 26px;
+    position: relative; top: -2px;
+  }
+
+  .login {
+    display: flex;
+    flex-direction: row;
+    gap: 400px;
+    margin: 10px; 
+  }
+
+  h5 {
+    font-size: larger;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    /* position:relative; top:-840px; right: -350px; */
+    color: rgb(36, 47, 56);
+    font-weight: bolder;
+  }
+
+  a{
+    color: rgb(63, 45, 45);
+    text-decoration: none
+  }
+
+  a:hover{
+    color: rgb(230, 238, 109);
+
+  }
+
+
+  .login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 34px;
+  }
+  
+  .login img {
+    height: 30px;
+  }

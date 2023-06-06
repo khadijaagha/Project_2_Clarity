@@ -1,0 +1,23 @@
+<%- include('../partials/header') %>
+
+
+<div id="newtechnique">
+
+    <form id="new-form" action="/techniques" method="POST">
+        <label>Meditation Technique:</label>
+        <input type="text" name="technique">
+        <label>Description</label>
+        <input type="text" name="description">
+        <label>How did you find it?</label>
+        <input type="text" name="thoughts">
+       <div id="post-btn"> <input type="submit" value="Update"> </div>
+      </form>
+    
+    </div>
+    
+   
+
+
+
+
+<%- include('../partials/footer') %>

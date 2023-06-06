@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    <div class="real-title">
+      <%= title %>
+    </div>
+  </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+
+</head>
+
+<body>
+  <header>
+
+    <div id="nav">
+      <nav>
+
+        <a href="/">Home</a>
+        
+
+        <nav>
+
+          <% if (user) { %>
+            <a href="/techniques" <%- title==='My Technique' ? 'class="active"' : '' %>>
+              All Techniques</a>
+            
+            <a href="/techniques/new" <%- title==='Add Technique' ? 'class="active"' : '' %>>Add Technique</a>
+            
+            <a href="/logout">LOG OUT</a>
+            <% } else { %>
+              <a href="/auth/google" class="login">LOG IN&nbsp;<img src="https://i.imgur.com/FHjYyi0.png"></a>
+              <% } %>
+
+    </div>
+    </nav>
+
+
+    </nav>
+  </header>
+  <h1>
+    <%= title %>
+  </h1>
+
+
+  <div class="container"></div>
