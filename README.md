@@ -13,9 +13,6 @@ https://clarity-project-2.fly.dev/
 
 
 
-**Github:**
-https://github.com/khadijaagha/Project_2_Clarity
-
 
 
 
@@ -25,14 +22,17 @@ Click on the link, sign in through your Google account and start adding posts!
 
 
 
+
 **Timeframe & Working Team (Solo/Pair/Group)**
 This was an independent project expected to be completed in a week.
+
 
 
 
 **Technologies Used**
 
 The technologies used include frontend and backend - Node.js, Express frameworks, CSS and HTML.
+
 
 
 **Brief**
@@ -95,12 +95,12 @@ Note: Don't underestimate the value of a well crafted README.md. The README.md i
 
 
 
-Title page - visual planning made on Excalidraw
+Wireframe made using Figma
 
 
-This is a visual representation and planning of how I wanted my web application to look like. There is a home/landing page (first slide),  a page where all posts should be able to be seen and accessed (third slide) and then a separate slide where a user can create a post.
-	
-The slide above is lastly the ‘show’ page of a particular post that's clicked on. It should show details of the meditation technique and users should be able to post comments.
+This is a visual representation and planning of how I wanted my web application to look like. There is a home/landing page (first slide),  a page where all posts should be able to be seen and accessed (third slide) and then a separate slide where a user can create a post. Lastly, a‘show’ page of a particular post that's clicked on. It should show details of the meditation technique and users should be able to post comments.
+
+
 
 
 
@@ -122,6 +122,9 @@ I used Trello as a project management tool to ensure I was meeting my checklists
 
 
 
+
+<img width="881" alt="Screenshot 2023-08-13 at 16 27 30" src="https://github.com/khadijaagha/Project_2_Clarity/assets/130927994/94a282fe-288c-4ebf-a197-dbc2e3b342e3">
+
 Screenshot of my Trello board towards completion of the project.
 
 There was no pseudocode involved but I used past exercises as a reference point which was extremely helpful.
@@ -132,17 +135,25 @@ Throughout the development process, I encountered various functions and pieces o
 
 
 
+
+<img width="621" alt="Screenshot 2023-08-13 at 16 27 51" src="https://github.com/khadijaagha/Project_2_Clarity/assets/130927994/5658633d-4769-4451-a5c3-2b4bf5d7ce75">
+
 Screenshot showing the ‘create’ function in my controller for my comments feature.
 
 In this screenshot, the create function to allow comments to be added to a post is shown, the reason I have included this is because I struggled on trying to make this particular user story work. Mostly, due to my own understanding of the differences between req.params vs. req.body vs. req.user which was still not as concrete. In this code, I am trying to access the particular post’s ID to which we are adding the comments to (req.params). In the ‘try’ block, I am trying to access the user’s unique ID so that the comment has an element of ownership. Line 20, the comment is being added to the array through the push method and ultimately saved and the user is redirected to the post page with the comment displayed.
 
 
 
+
+<img width="881" alt="Screenshot 2023-08-13 at 16 28 06" src="https://github.com/khadijaagha/Project_2_Clarity/assets/130927994/9f6a614e-6a57-4882-8ea4-aec6ef080818">
+
 Screenshot of ‘create’ function for a post
 
 This screenshot, similarly also shows another ‘create’ function, this function helps run one of the main user stories, where a user can create a new post. Again, this involves the use of the req.body to store the ID of the particular post as well as storing the user ID of the post, that was still an unsure topic for me but with practice my understanding solidified. 
 
 
+
+<img width="881" alt="Screenshot 2023-08-13 at 16 28 23" src="https://github.com/khadijaagha/Project_2_Clarity/assets/130927994/435c8cdf-5288-4717-be87-298db73c3f25">
 
 Screenshot of ensureOwner function 
 
