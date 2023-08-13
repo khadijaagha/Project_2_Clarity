@@ -24,6 +24,7 @@ Click on the link, sign in through your Google account and start adding posts!
 
 
 **Timeframe & Working Team (Solo/Pair/Group)**
+
 This was an independent project expected to be completed in a week.
 
 
